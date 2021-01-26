@@ -70,6 +70,10 @@ def server(log_buffer=sys.stderr):
                     # message is a trick we learned in the lesson: if you don't
                     # remember then ask your classmates or instructor for a clue.
                     # :)
+                    '''
+                    if data[-2:] == b'\r\n':
+                        break
+                    '''
             except socket.timeout:
                 # Don't thing this is how to determine EOF.
                 pass
